@@ -25,7 +25,7 @@
                                 </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOD-zW-O0A">
-                                <rect key="frame" x="16" y="20" width="343" height="589"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="589"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -43,12 +43,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="khb-8b-jbu" secondAttribute="bottom" constant="20" id="6u1-2v-F4F"/>
-                            <constraint firstItem="dOD-zW-O0A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GiT-Q7-Dm3"/>
+                            <constraint firstItem="dOD-zW-O0A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GiT-Q7-Dm3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r7Z-cg-4SW" secondAttribute="bottom" constant="20" id="P6Q-v5-bu1"/>
                             <constraint firstItem="r7Z-cg-4SW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UJi-Qq-g0k"/>
                             <constraint firstItem="dOD-zW-O0A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dk8-Qo-eVB"/>
                             <constraint firstItem="r7Z-cg-4SW" firstAttribute="top" secondItem="dOD-zW-O0A" secondAttribute="bottom" constant="8" id="kGU-KI-XeI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dOD-zW-O0A" secondAttribute="trailing" constant="16" id="s1O-AK-E3p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dOD-zW-O0A" secondAttribute="trailing" id="s1O-AK-E3p"/>
                             <constraint firstItem="khb-8b-jbu" firstAttribute="leading" secondItem="r7Z-cg-4SW" secondAttribute="trailing" constant="8" id="sPB-jF-XDQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
