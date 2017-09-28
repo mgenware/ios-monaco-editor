@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87CE7FE41F7CAF5D00BB77A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE7FE31F7CAF5D00BB77A7 /* AppDelegate.swift */; };
+		87CE7FE61F7CAF5D00BB77A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE7FE51F7CAF5D00BB77A7 /* ViewController.swift */; };
+		87CE7FE91F7CAF5D00BB77A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CE7FE71F7CAF5D00BB77A7 /* Main.storyboard */; };
+		87CE7FEB1F7CAF5D00BB77A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE7FEA1F7CAF5D00BB77A7 /* Assets.xcassets */; };
+		87CE7FEE1F7CAF5D00BB77A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CE7FEC1F7CAF5D00BB77A7 /* LaunchScreen.storyboard */; };
+		87CE7FF81F7CBF0000BB77A7 /* static in Resources */ = {isa = PBXBuildFile; fileRef = 87CE7FF61F7CAFD600BB77A7 /* static */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87CE7FE01F7CAF5D00BB77A7 /* ios-monaco-editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-monaco-editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87CE7FE31F7CAF5D00BB77A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87CE7FE51F7CAF5D00BB77A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87CE7FE81F7CAF5D00BB77A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87CE7FEA1F7CAF5D00BB77A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87CE7FED1F7CAF5D00BB77A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87CE7FEF1F7CAF5D00BB77A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87CE7FF61F7CAFD600BB77A7 /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87CE7FDD1F7CAF5D00BB77A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87CE7FD71F7CAF5D00BB77A7 = {
+			isa = PBXGroup;
+			children = (
+				87CE7FE21F7CAF5D00BB77A7 /* ios-monaco-editor */,
+				87CE7FE11F7CAF5D00BB77A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87CE7FE11F7CAF5D00BB77A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87CE7FE01F7CAF5D00BB77A7 /* ios-monaco-editor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87CE7FE21F7CAF5D00BB77A7 /* ios-monaco-editor */ = {
+			isa = PBXGroup;
+			children = (
+				87CE7FF61F7CAFD600BB77A7 /* static */,
+				87CE7FE31F7CAF5D00BB77A7 /* AppDelegate.swift */,
+				87CE7FE51F7CAF5D00BB77A7 /* ViewController.swift */,
+				87CE7FE71F7CAF5D00BB77A7 /* Main.storyboard */,
+				87CE7FEA1F7CAF5D00BB77A7 /* Assets.xcassets */,
+				87CE7FEC1F7CAF5D00BB77A7 /* LaunchScreen.storyboard */,
+				87CE7FEF1F7CAF5D00BB77A7 /* Info.plist */,
+			);
+			path = "ios-monaco-editor";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87CE7FDF1F7CAF5D00BB77A7 /* ios-monaco-editor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87CE7FF21F7CAF5D00BB77A7 /* Build configuration list for PBXNativeTarget "ios-monaco-editor" */;
+			buildPhases = (
+				87CE7FDC1F7CAF5D00BB77A7 /* Sources */,
+				87CE7FDD1F7CAF5D00BB77A7 /* Frameworks */,
+				87CE7FDE1F7CAF5D00BB77A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-monaco-editor";
+			productName = "ios-monaco-editor";
+			productReference = 87CE7FE01F7CAF5D00BB77A7 /* ios-monaco-editor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87CE7FD81F7CAF5D00BB77A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Mgen;
+				TargetAttributes = {
+					87CE7FDF1F7CAF5D00BB77A7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 87CE7FDB1F7CAF5D00BB77A7 /* Build configuration list for PBXProject "ios-monaco-editor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87CE7FD71F7CAF5D00BB77A7;
+			productRefGroup = 87CE7FE11F7CAF5D00BB77A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87CE7FDF1F7CAF5D00BB77A7 /* ios-monaco-editor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87CE7FDE1F7CAF5D00BB77A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87CE7FEE1F7CAF5D00BB77A7 /* LaunchScreen.storyboard in Resources */,
+				87CE7FEB1F7CAF5D00BB77A7 /* Assets.xcassets in Resources */,
+				87CE7FF81F7CBF0000BB77A7 /* static in Resources */,
+				87CE7FE91F7CAF5D00BB77A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87CE7FDC1F7CAF5D00BB77A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87CE7FE61F7CAF5D00BB77A7 /* ViewController.swift in Sources */,
+				87CE7FE41F7CAF5D00BB77A7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87CE7FE71F7CAF5D00BB77A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87CE7FE81F7CAF5D00BB77A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87CE7FEC1F7CAF5D00BB77A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87CE7FED1F7CAF5D00BB77A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87CE7FF01F7CAF5D00BB77A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87CE7FF11F7CAF5D00BB77A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87CE7FF31F7CAF5D00BB77A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ios-monaco-editor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgenware.ios-monaco-editor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87CE7FF41F7CAF5D00BB77A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ios-monaco-editor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgenware.ios-monaco-editor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87CE7FDB1F7CAF5D00BB77A7 /* Build configuration list for PBXProject "ios-monaco-editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87CE7FF01F7CAF5D00BB77A7 /* Debug */,
+				87CE7FF11F7CAF5D00BB77A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87CE7FF21F7CAF5D00BB77A7 /* Build configuration list for PBXNativeTarget "ios-monaco-editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87CE7FF31F7CAF5D00BB77A7 /* Debug */,
+				87CE7FF41F7CAF5D00BB77A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87CE7FD81F7CAF5D00BB77A7 /* Project object */;
+}
