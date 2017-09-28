@@ -18,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-cg-4SW">
-                                <rect key="frame" x="16" y="617" width="89" height="30"/>
-                                <state key="normal" title="Print content"/>
+                                <rect key="frame" x="16" y="617" width="74" height="30"/>
+                                <state key="normal" title="Print Value"/>
                                 <connections>
                                     <action selector="printContent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Agt-Ue-Vdl"/>
                                 </connections>
@@ -33,8 +33,8 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khb-8b-jbu">
-                                <rect key="frame" x="113" y="617" width="48" height="30"/>
-                                <state key="normal" title="Run JS"/>
+                                <rect key="frame" x="98" y="617" width="30" height="30"/>
+                                <state key="normal" title="Run"/>
                                 <connections>
                                     <action selector="runJS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qR-P5-DdF"/>
                                 </connections>

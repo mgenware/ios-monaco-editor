@@ -7,19 +7,41 @@
 </head>
 <body>
 
-<div id="container" style="width:100vh;height:100vh;border:1px solid grey"></div>
+<div id="container" style="width:100vh;height:600px;"></div>
 
 <script src="monaco-editor/min/vs/loader.js"></script>
 <script>
+	var editor = null;
+
+	function printValue() {
+		if (editor) {
+			alert(editor.getValue());
+		} else {
+			alert('Editor is not fully initialized');
+		}
+	}
+
+	function runJS() {
+		if (editor) {
+			alert(eval(editor.getValue()));
+		} else {
+			alert('Editor is not fully initialized');
+		}
+	}
+
 	require.config({ paths: { 'vs': 'monaco-editor/min/vs' }});
 	require(['vs/editor/editor.main'], function() {
-		var editor = monaco.editor.create(document.getElementById('container'), {
-			value: [
-				'function x() {',
-				'\tconsole.log("Hello world!");',
-				'}'
-			].join('\n'),
-			language: 'javascript'
+		editor = monaco.editor.create(document.getElementById('container'), {
+			value: `function hello() {
+  console.log('Hello world');
+}
+
+function add(a, b) {
+	return a + b;
+}
+
+`,
+			language: 'javascript',
 		});
 	});
 </script>
