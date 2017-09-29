@@ -4,6 +4,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<style>
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	</style>
 </head>
 <body>
 
@@ -43,6 +49,8 @@ function add(a, b) {
 `,
 			language: 'javascript',
 		});
+		var themeString = 'vs-dark';
+		window.monaco.editor.setTheme(themeString);
 		window.webkit.messageHandlers.editorLoaded.postMessage('loaded');
 	});
 </script>
