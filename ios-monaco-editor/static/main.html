@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div id="container" style="width:100vh;height:600px;"></div>
+<div id="container" style="width:100vh;height:100vh;"></div>
 
 <script src="monaco-editor/min/vs/loader.js"></script>
 <script>
@@ -48,6 +48,9 @@
 	require.config({ paths: { 'vs': 'monaco-editor/min/vs' }});
 	require(['vs/editor/editor.main'], function() {
 		editor = monaco.editor.create(document.getElementById('container'), {
+			minimap: {
+				enabled: false,
+			},
 			value: `function hello() {
   return 'Hello world';
 }
@@ -60,6 +63,7 @@ hello() + add(100, 23);
 `,
 			language: 'javascript',
 		});
+		editor.wordWrap = 'on';
 		var themeString = 'vs-dark';
 		window.monaco.editor.setTheme(themeString);
 		window.webkit.messageHandlers.editorLoaded.postMessage('loaded');
