@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func setContent(_ sender: Any) {
-        webView.evaluateJavaScript("setValue(\"['Monaco', 'Editor', 'is', 'great'].join(' ');\")", completionHandler: nil);
+        webView.evaluateJavaScript("setValue(\"['hello', 'world'].join(' ');\")", completionHandler: nil);
     }
     
     @IBAction func runJS(_ sender: Any) {
