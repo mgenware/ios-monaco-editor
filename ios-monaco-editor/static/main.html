@@ -19,19 +19,29 @@
 <script>
 	var editor = null;
 
-	function printValue() {
+	function checkEditor() {
 		if (editor) {
+			return true;
+		}
+		alert('Editor is not fully initialized');
+		return false;
+	}
+
+	function printValue() {
+		if (checkEditor()) {
 			alert(editor.getValue());
-		} else {
-			alert('Editor is not fully initialized');
+		}
+	}
+
+	function setValue(value) {
+		if (checkEditor()) {
+			editor.setValue(value);
 		}
 	}
 
 	function runJS() {
-		if (editor) {
+		if (checkEditor()) {
 			alert(eval(editor.getValue()));
-		} else {
-			alert('Editor is not fully initialized');
 		}
 	}
 
@@ -39,13 +49,14 @@
 	require(['vs/editor/editor.main'], function() {
 		editor = monaco.editor.create(document.getElementById('container'), {
 			value: `function hello() {
-  console.log('Hello world');
+  return 'Hello world';
 }
 
 function add(a, b) {
 	return a + b;
 }
 
+hello() + add(100, 23);
 `,
 			language: 'javascript',
 		});

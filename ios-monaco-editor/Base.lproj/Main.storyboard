@@ -18,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-cg-4SW">
-                                <rect key="frame" x="16" y="617" width="74" height="30"/>
-                                <state key="normal" title="Print Value"/>
+                                <rect key="frame" x="16" y="617" width="67" height="30"/>
+                                <state key="normal" title="Get Value"/>
                                 <connections>
                                     <action selector="printContent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Agt-Ue-Vdl"/>
                                 </connections>
@@ -33,10 +33,17 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khb-8b-jbu">
-                                <rect key="frame" x="98" y="617" width="30" height="30"/>
+                                <rect key="frame" x="91" y="617" width="30" height="30"/>
                                 <state key="normal" title="Run"/>
                                 <connections>
                                     <action selector="runJS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qR-P5-DdF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfd-zV-L0z">
+                                <rect key="frame" x="129" y="617" width="65" height="30"/>
+                                <state key="normal" title="Set Value"/>
+                                <connections>
+                                    <action selector="setContent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6av-nk-0UL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,7 +53,9 @@
                             <constraint firstItem="dOD-zW-O0A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GiT-Q7-Dm3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r7Z-cg-4SW" secondAttribute="bottom" constant="20" id="P6Q-v5-bu1"/>
                             <constraint firstItem="r7Z-cg-4SW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UJi-Qq-g0k"/>
+                            <constraint firstItem="Nfd-zV-L0z" firstAttribute="leading" secondItem="khb-8b-jbu" secondAttribute="trailing" constant="8" id="b9K-us-t4P"/>
                             <constraint firstItem="dOD-zW-O0A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dk8-Qo-eVB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nfd-zV-L0z" secondAttribute="bottom" constant="20" id="hmU-A4-bul"/>
                             <constraint firstItem="r7Z-cg-4SW" firstAttribute="top" secondItem="dOD-zW-O0A" secondAttribute="bottom" constant="8" id="kGU-KI-XeI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dOD-zW-O0A" secondAttribute="trailing" id="s1O-AK-E3p"/>
                             <constraint firstItem="khb-8b-jbu" firstAttribute="leading" secondItem="r7Z-cg-4SW" secondAttribute="trailing" constant="8" id="sPB-jF-XDQ"/>

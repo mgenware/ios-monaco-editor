@@ -47,6 +47,10 @@ class ViewController: UIViewController {
         webView.evaluateJavaScript("printValue()", completionHandler: nil);
     }
     
+    @IBAction func setContent(_ sender: Any) {
+        webView.evaluateJavaScript("setValue(\"['Monaco', 'Editor', 'is', 'great'].join(' ');\")", completionHandler: nil);
+    }
+    
     @IBAction func runJS(_ sender: Any) {
         webView.evaluateJavaScript("runJS()") { (result, error) in
             if let error = error {
