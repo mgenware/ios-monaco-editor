@@ -1,0 +1,6 @@
+framework module Pods_ios_monaco_editor {
+  umbrella header "Pods-ios-monaco-editor-umbrella.h"
+
+  export *
+  module * { export * }
+}

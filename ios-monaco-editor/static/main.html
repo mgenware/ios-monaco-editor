@@ -43,6 +43,7 @@ function add(a, b) {
 `,
 			language: 'javascript',
 		});
+		window.webkit.messageHandlers.editorLoaded.postMessage('loaded');
 	});
 </script>
 </body>

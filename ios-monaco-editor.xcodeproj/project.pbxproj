@@ -13,9 +13,12 @@
 		87CE7FEB1F7CAF5D00BB77A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE7FEA1F7CAF5D00BB77A7 /* Assets.xcassets */; };
 		87CE7FEE1F7CAF5D00BB77A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CE7FEC1F7CAF5D00BB77A7 /* LaunchScreen.storyboard */; };
 		87CE7FF81F7CBF0000BB77A7 /* static in Resources */ = {isa = PBXBuildFile; fileRef = 87CE7FF61F7CAFD600BB77A7 /* static */; };
+		EF9B90A24BBBFCC43936C5F5 /* Pods_ios_monaco_editor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EC137E8C252AFDD3ACA0C6 /* Pods_ios_monaco_editor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B35E52B8A543EDE5452ACCF /* Pods-ios-monaco-editor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-monaco-editor.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-monaco-editor/Pods-ios-monaco-editor.release.xcconfig"; sourceTree = "<group>"; };
+		37004B4DB8B1882A1EAF38D8 /* Pods-ios-monaco-editor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-monaco-editor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-monaco-editor/Pods-ios-monaco-editor.debug.xcconfig"; sourceTree = "<group>"; };
 		87CE7FE01F7CAF5D00BB77A7 /* ios-monaco-editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-monaco-editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CE7FE31F7CAF5D00BB77A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87CE7FE51F7CAF5D00BB77A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		87CE7FED1F7CAF5D00BB77A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87CE7FEF1F7CAF5D00BB77A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87CE7FF61F7CAFD600BB77A7 /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
+		C7EC137E8C252AFDD3ACA0C6 /* Pods_ios_monaco_editor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_monaco_editor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9B90A24BBBFCC43936C5F5 /* Pods_ios_monaco_editor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C5354A4E451C89F7B651549 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC137E8C252AFDD3ACA0C6 /* Pods_ios_monaco_editor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87CE7FD71F7CAF5D00BB77A7 = {
 			isa = PBXGroup;
 			children = (
 				87CE7FE21F7CAF5D00BB77A7 /* ios-monaco-editor */,
 				87CE7FE11F7CAF5D00BB77A7 /* Products */,
+				C157063CB999F16EBFAEE2C2 /* Pods */,
+				6C5354A4E451C89F7B651549 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "ios-monaco-editor";
 			sourceTree = "<group>";
 		};
+		C157063CB999F16EBFAEE2C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37004B4DB8B1882A1EAF38D8 /* Pods-ios-monaco-editor.debug.xcconfig */,
+				2B35E52B8A543EDE5452ACCF /* Pods-ios-monaco-editor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87CE7FF21F7CAF5D00BB77A7 /* Build configuration list for PBXNativeTarget "ios-monaco-editor" */;
 			buildPhases = (
+				DB9F2B430A3245A04FD58AA7 /* [CP] Check Pods Manifest.lock */,
 				87CE7FDC1F7CAF5D00BB77A7 /* Sources */,
 				87CE7FDD1F7CAF5D00BB77A7 /* Frameworks */,
 				87CE7FDE1F7CAF5D00BB77A7 /* Resources */,
+				3C8AEB5ED8823BA5A55EE075 /* [CP] Embed Pods Frameworks */,
+				788682F7CFC13D3056046C5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C8AEB5ED8823BA5A55EE075 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-monaco-editor/Pods-ios-monaco-editor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-monaco-editor/Pods-ios-monaco-editor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		788682F7CFC13D3056046C5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-monaco-editor/Pods-ios-monaco-editor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB9F2B430A3245A04FD58AA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-monaco-editor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87CE7FDC1F7CAF5D00BB77A7 /* Sources */ = {
@@ -276,6 +357,7 @@
 		};
 		87CE7FF31F7CAF5D00BB77A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37004B4DB8B1882A1EAF38D8 /* Pods-ios-monaco-editor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +372,7 @@
 		};
 		87CE7FF41F7CAF5D00BB77A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B35E52B8A543EDE5452ACCF /* Pods-ios-monaco-editor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

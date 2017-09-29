@@ -1,0 +1,7 @@
+platform :ios, '11.0'
+
+target 'ios-monaco-editor' do
+  use_frameworks!
+
+  pod 'MBProgressHUD', '~> 1.0.0'
+end

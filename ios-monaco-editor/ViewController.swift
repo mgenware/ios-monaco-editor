@@ -8,10 +8,13 @@
 
 import UIKit
 import WebKit
+import MBProgressHUD
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
+    let loadingIndicatorView: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    let WebViewMessageEditorLoaded = "editorLoaded"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +28,14 @@ class ViewController: UIViewController {
         
         let htmlURL = resURL.appendingPathComponent("static/main.html");
         let dirURL = resURL.appendingPathComponent("static");
+        webView.configuration.userContentController.add(self, name: WebViewMessageEditorLoaded)
         
         webView.loadFileURL(htmlURL, allowingReadAccessTo: dirURL)
+        
+        // animate the indicator
+        let loadingNotification = MBProgressHUD.showAdded(to: self.view, animated: true)
+        loadingNotification.mode = MBProgressHUDMode.indeterminate
+        loadingNotification.labelText = "Initializing monaco editor..."
     }
 
     override func didReceiveMemoryWarning() {
@@ -112,3 +121,12 @@ extension ViewController: WKUIDelegate {
         present(alertController, animated: true, completion: nil)
     }
 }
+
+extension ViewController: WKScriptMessageHandler {
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if message.name == WebViewMessageEditorLoaded {
+            MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+        }
+    }
+}
+
